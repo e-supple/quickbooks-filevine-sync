@@ -4,12 +4,14 @@ import os
 from flask import Flask, request, jsonify
 import uuid
 from pathlib import Path
-from utils.file_system import cache_to_file
 
 app = Flask(__name__)
 
 # Initialize data lists
-cache_dir = Path("cache")
+base_dir = Path(__file__).resolve().parent
+cache_dir = base_dir / 'cache'
+os.makedirs(cache_dir)
+
 contacts = []
 expenses = []
 invoices = []
@@ -17,8 +19,15 @@ time_entries = []
 sync_status = []
 
 # Persistent storage
-CONTACTS_FILE = "contacts.json"
-EXPENSES_FILE = "expenses.json"
+# Persistent storage
+CONTACTS_FILE = cache_dir / "contacts.json"
+EXPENSES_FILE = cache_dir / "expenses.json"
+INVOICES_FILE = cache_dir / "invoices.json"
+TIME_ENTRIES_FILE = cache_dir / "time_entries.json"
+SYNC_STATUS_FILE = cache_dir / "sync_status.json"
+
+
+
 
 def load_data(file):
     if os.path.exists(file):

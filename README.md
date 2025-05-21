@@ -20,7 +20,7 @@ quickbooks-filevine-sync/
 │   └── test_invoices.py    # Invoice line item tester
 ├── sync.py                 # Main sync script
 ├── mappings.db             # SQLite DB for ID mappings
-└── README.md               # This file
+└── README.md               
 ```
 Features
 

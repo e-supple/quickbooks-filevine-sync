@@ -15,7 +15,8 @@ time_entries = []
 sync_status = []
 
 # Persistent storage
-cache_dir = Path("../cache")  
+base_dir = Path(__file__).resolve().parent  
+cache_dir = base_dir / "cache"
 cache_dir.mkdir(exist_ok=True)
 CONTACTS_FILE = cache_dir / "contacts.json"
 EXPENSES_FILE = cache_dir / "expenses.json"
