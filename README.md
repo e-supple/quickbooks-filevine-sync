@@ -9,6 +9,7 @@ Data: 113 invoices, 44 expense accounts mapped, stored in mappings.db and cache/
 Filevine API: Awaiting API keys (expected May 21 or 22, 2025); using mock server (http://localhost:5000).
 EndUser ID: end_usr_Wb4uG5P0SbiOmD.
 
+```
 Project Structure
 quickbooks-filevine-sync/
 ├── cache/                  # JSON cache files (contacts.json, expenses.json, etc.)
@@ -20,7 +21,7 @@ quickbooks-filevine-sync/
 ├── sync.py                 # Main sync script
 ├── mappings.db             # SQLite DB for ID mappings
 └── README.md               # This file
-
+```
 Features
 
 Bidirectional Contact Sync: Syncs customer names between QBD and Filevine (e.g., updates “Abercrombie, Kristy” to “Abercrombie, Kristen”).
