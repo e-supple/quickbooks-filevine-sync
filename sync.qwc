@@ -1,0 +1,12 @@
+<QBWCXML>
+  <AppName>QuickBooks-Filevine Sync</AppName>
+  <AppID/>
+  <AppURL>http://localhost:5001/qbwc</AppURL>
+  <AppDescription>Syncs QuickBooks with Filevine</AppDescription>
+  <AppSupport>https://localhost:5001/support</AppSupport>
+  <UserName>sync_user</UserName>
+  <OwnerID>{e3e6928e-b600-4a56-a582-615324b1f1af}</OwnerID>
+  <FileID>{fb66068f-75a6-4c5a-bb8f-4280bf1eb271}</FileID>
+  <QBType>QBFS</QBType>
+  <Style>Document</Style>
+</QBWCXML>

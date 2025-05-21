@@ -1,0 +1,20 @@
+[project]
+name = "quickbooks-filevine-sync"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "asyncio>=3.4.3",
+    "conductor-py>=1.40.0",
+    "conductor-python>=1.1.10",
+    "fastapi[standard]>=0.115.12",
+    "flask>=3.1.1",
+    "pydantic>=2.11.4",
+    "python-dotenv>=1.1.0",
+    "quickbooks-python>=0.1.5",
+    "requests>=2.32.3",
+    "schedule>=1.2.2",
+    "typer>=0.15.4",
+    "uvicorn>=0.34.2",
+]
